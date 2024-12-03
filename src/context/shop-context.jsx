@@ -29,13 +29,17 @@ export const ShopContextProvider = (props) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
   };
 
-  const removeFromCart = (itemId) => {
+  const reduceFromCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
 
   const updateCartItemCount = (newAmount, itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
   };
+
+  const removeFromCart = (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: 0 }));
+  }
 
   const checkout = () => {
     setCartItems(getDefaultCart());
@@ -45,6 +49,7 @@ export const ShopContextProvider = (props) => {
     cartItems,
     addToCart,
     updateCartItemCount,
+    reduceFromCart,
     removeFromCart,
     getTotalCartAmount,
     checkout,
