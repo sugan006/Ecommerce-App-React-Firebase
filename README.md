@@ -1,6 +1,6 @@
 # A sample e-commerce website desinged frontend with #React, styled with #tailwindcss and backend with #firebase
 
-#Functionalities
+# Functionalities
 - Sign in and Sign up using firebase auth
 - Any user whether signed in or not can view products
 - Authentication Features:
@@ -31,3 +31,9 @@
     i. Display the total cost of items in the cart.
 - Additionally search and filter based on category implemented.
 - As firebase connection is confidential that details not updated in github due to public repository
+
+# Setup
+- Clone the repository using git clone in vs code or any editor
+- Navigate to project directory -> cd Ecommerce-App-React-Firebase
+- use npm i to install node modules
+- npm start to start the project
