@@ -1,4 +1,4 @@
-# A sample ecoomerce website desinged frontend with React, styled with tailwindcss and backend with firebase
+# A sample ecoomerce website desinged frontend with #React, styled with #tailwindcss and backend with #firebase
 
 #Functionalities
 - Sign in and Sign up using firebase auth
